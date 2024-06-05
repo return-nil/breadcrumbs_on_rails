@@ -12,13 +12,7 @@ jobs:
       matrix:
         include:
           - gemfile: "6.0"
-            ruby-version: "2.6"
-          - gemfile: "6.0"
-            ruby-version: "2.7"
-          - gemfile: "6.0"
-            ruby-version: "3.0"
-          - gemfile: "6.0"
-            ruby-version: "3.1"
+            ruby-version: "3.3"
     runs-on: ubuntu-latest
     name: rails ${{ matrix.gemfile }}, ruby ${{ matrix.ruby-version }}
 
